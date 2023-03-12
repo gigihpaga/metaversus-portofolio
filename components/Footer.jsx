@@ -24,7 +24,7 @@ const Footer = () => (
                     className="hover:bg-opacity-80 flex items-center h-fit py-4 px-6 bg-[#25618b] rounded-[32px] gap-[12px]"
                 >
                     <img
-                        src="/headset.svg"
+                        src="headset.svg"
                         alt="headset"
                         className="w-[24px] h-[24px] object-contain"
                     />

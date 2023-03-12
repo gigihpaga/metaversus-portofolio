@@ -27,7 +27,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
                 <div
                     className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
                 >
-                    <img src="/headset.svg" alt="headset" className="w-1/2 h-1/2 object-contain" />
+                    <img src="headset.svg" alt="headset" className="w-1/2 h-1/2 object-contain" />
                 </div>
                 <p className="font-normal text-[16px] leading-[20px] text-white uppercase">
                     enter the metaverse
