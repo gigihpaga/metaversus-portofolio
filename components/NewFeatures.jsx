@@ -10,6 +10,7 @@ const NewFeatures = ({ imgUrl, title, subtitle }) => (
                 className="w-1/2 h-1/2 object-contain"
                 width={1080}
                 height={1080}
+                priority
             />
         </div>
         <h1 className="mt-[26px] font-bold text-[24px] leading-[30px] text-white">Title {title}</h1>

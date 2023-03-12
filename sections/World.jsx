@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { staggerContainer, fadeIn } from '../utils/motion';
 import { TitleText, TypingText } from '../components';
+import { map, people01, people02, people03 } from '../constants/images';
 
 const World = () => (
     <section className={`${styles.paddings} relative z-10`}>
@@ -28,7 +29,7 @@ const World = () => (
                 className="relative mt-[68px] flex w-full h-[550px]"
             >
                 <Image
-                    src="/map.png"
+                    src={map}
                     alt="map"
                     className="w-full h-full object-cover"
                     width={1080}
@@ -36,29 +37,32 @@ const World = () => (
                 />
                 <div className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
                     <Image
-                        src="/people-01.png"
+                        src={people01}
                         alt="people"
                         className="w-full h-full"
                         width={1080}
                         height={1080}
+                        priority
                     />
                 </div>
                 <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
                     <Image
-                        src="/people-02.png"
+                        src={people02}
                         alt="people"
                         className="w-full h-full"
                         width={1080}
                         height={1080}
+                        priority
                     />
                 </div>
                 <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
                     <Image
-                        src="/people-03.png"
+                        src={people03}
                         alt="people"
                         className="w-full h-full"
                         width={1080}
                         height={1080}
+                        priority
                     />
                 </div>
             </motion.div>

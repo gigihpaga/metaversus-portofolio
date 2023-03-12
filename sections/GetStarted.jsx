@@ -7,6 +7,7 @@ import styles from '../styles';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 import { StartSteps, TitleText, TypingText } from '../components';
 import { startingFeatures } from '../constants';
+import { getStarted } from '../constants/images';
 
 const GetStarted = () => (
     <section className={`${styles.paddings} relative z-10`}>
@@ -19,11 +20,12 @@ const GetStarted = () => (
         >
             <motion.div variants={planetVariants('left')} className={`flex-1 ${styles.flexCenter}`}>
                 <Image
-                    src="/get-started.png"
+                    src={getStarted}
                     alt="get-started"
                     className="w-[90%] h-[90%] object-contain"
                     width={1080}
                     height={1080}
+                    priority
                 />
             </motion.div>
             <motion.div

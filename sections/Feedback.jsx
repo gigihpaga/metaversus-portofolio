@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
+import { planet09, stamp } from '../constants/images';
 
 const Feedback = () => (
     <section className={`${styles.paddings} relative z-10`}>
@@ -43,15 +44,16 @@ const Feedback = () => (
                     className="lg:block hidden absolute -left-[10%] top-[3%]"
                 >
                     <Image
-                        src="/stamp.png"
+                        src={stamp}
                         alt="stamp"
                         className="w-[155px] h-[155px] object-contain"
                         width={1080}
                         height={1080}
+                        priority
                     />
                 </motion.div>
                 <Image
-                    src="/planet-09.png"
+                    src={planet09}
                     alt="planet"
                     className="w-full lg:h-[610px] h-auto m-h-[210px] object-cover rounded-[40px]"
                     width={1080}

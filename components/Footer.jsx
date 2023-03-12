@@ -6,6 +6,7 @@ import { socials } from '../constants';
 
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
+import { headset } from '../constants/images';
 
 const Footer = () => (
     <motion.footer
@@ -25,11 +26,12 @@ const Footer = () => (
                     className="hover:bg-opacity-80 flex items-center h-fit py-4 px-6 bg-[#25618b] rounded-[32px] gap-[12px]"
                 >
                     <Image
-                        src="/headset.svg"
+                        src={headset}
                         alt="headset"
                         className="w-[24px] h-[24px] object-contain"
                         width={1080}
                         height={1080}
+                        priority
                     />
                     <span className="font-normal text-[16px] text-white">Enter Metaverse</span>
                 </button>
@@ -50,6 +52,7 @@ const Footer = () => (
                                 className="w-[24px] h-[24px] object-contain cursor-pointer"
                                 width={1080}
                                 height={1080}
+                                priority
                             />
                         ))}
                     </div>
