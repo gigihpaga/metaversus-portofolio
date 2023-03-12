@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
@@ -41,16 +42,20 @@ const Feedback = () => (
                     variants={zoomIn(0.4, 1)}
                     className="lg:block hidden absolute -left-[10%] top-[3%]"
                 >
-                    <img
-                        src="stamp.png"
+                    <Image
+                        src="/stamp.png"
                         alt="stamp"
                         className="w-[155px] h-[155px] object-contain"
+                        width={1080}
+                        height={1080}
                     />
                 </motion.div>
-                <img
-                    src="planet-09.png"
+                <Image
+                    src="/planet-09.png"
                     alt="planet"
                     className="w-full lg:h-[610px] h-auto m-h-[210px] object-cover rounded-[40px]"
+                    width={1080}
+                    height={1080}
                 />
             </motion.div>
         </motion.div>

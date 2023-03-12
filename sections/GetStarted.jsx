@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
@@ -17,10 +18,12 @@ const GetStarted = () => (
             className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
         >
             <motion.div variants={planetVariants('left')} className={`flex-1 ${styles.flexCenter}`}>
-                <img
-                    src="get-started.png"
+                <Image
+                    src="/get-started.png"
                     alt="get-started"
                     className="w-[90%] h-[90%] object-contain"
+                    width={1080}
+                    height={1080}
                 />
             </motion.div>
             <motion.div
