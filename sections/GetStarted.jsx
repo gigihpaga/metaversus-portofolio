@@ -25,7 +25,6 @@ const GetStarted = () => (
                     className="w-[90%] h-[90%] object-contain"
                     width={1080}
                     height={1080}
-                    priority
                 />
             </motion.div>
             <motion.div
